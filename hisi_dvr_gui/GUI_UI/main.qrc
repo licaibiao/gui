@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/fontawesome-webfont.ttf</file>
+        <file>image/DroidSansFallback.ttf</file>
+        <file>image/main.bmp</file>
+    </qresource>
+</RCC>

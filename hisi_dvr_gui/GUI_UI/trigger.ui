@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Trigger</class>
+ <widget class="QDialog" name="Trigger">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="widgetTop" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>45</height>
+    </size>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QPushButton" name="btnReturn">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="labTitle">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnMsg">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>150</y>
+     <width>91</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="set_enable">
+    <item>
+     <widget class="QComboBox" name="Back1_OnOff">
+      <item>
+       <property name="text">
+        <string>关</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>开</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="Back2_OnOff">
+      <item>
+       <property name="text">
+        <string>关</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>开</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="Back3_OnOff">
+      <item>
+       <property name="text">
+        <string>关</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>开</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="Back4_Onoff">
+      <item>
+       <property name="text">
+        <string>关</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>开</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>110</y>
+     <width>611</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="Title">
+    <item>
+     <widget class="QLabel" name="label_1">
+      <property name="text">
+       <string>触发源</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>使能</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>延时</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>辅助线</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>预览通道</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>170</y>
+     <width>81</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="Back_name">
+    <item>
+     <widget class="QLabel" name="label_ch1">
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="text">
+       <string>Back1</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_ch2">
+      <property name="text">
+       <string>Back2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_ch3">
+      <property name="text">
+       <string>Back3</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_ch4">
+      <property name="text">
+       <string>Back4</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>150</y>
+     <width>91</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="set_delay">
+    <item>
+     <widget class="QComboBox" name="Back1_Delay">
+      <item>
+       <property name="text">
+        <string>关</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>10s</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>20s</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>30s</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="Back2_Delay">
+      <item>
+       <property name="text">
+        <string>关</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>10s</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>20s</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>30s</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="Back3_Delay">
+      <item>
+       <property name="text">
+        <string>关</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>10s</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>20s</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>30s</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="Back4_Delay">
+      <item>
+       <property name="text">
+        <string>关</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>10s</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>20s</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>30s</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_4">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>150</y>
+     <width>91</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="set_line">
+    <item>
+     <widget class="QComboBox" name="Back1_Line">
+      <item>
+       <property name="text">
+        <string>关</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>开</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="Back2_Line">
+      <item>
+       <property name="text">
+        <string>关</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>开</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="Back3_Line">
+      <item>
+       <property name="text">
+        <string>关</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>开</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="Back4_Line">
+      <item>
+       <property name="text">
+        <string>关</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>开</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_5">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>150</y>
+     <width>91</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="set_ch">
+    <item>
+     <widget class="QComboBox" name="Back1_Ch">
+      <item>
+       <property name="text">
+        <string>关</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CH1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CH2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CH3</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CH4</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="Back2_Ch">
+      <item>
+       <property name="text">
+        <string>关</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CH1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CH2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CH3</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CH4</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="Back3_Ch">
+      <item>
+       <property name="text">
+        <string>关</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CH1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CH2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CH3</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CH4</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="Back4_Ch">
+      <item>
+       <property name="text">
+        <string>关</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CH1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CH2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CH3</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CH4</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="select_ok">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>430</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>确认</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
