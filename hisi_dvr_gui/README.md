@@ -1,5 +1,5 @@
 
-#hisi_dvr_gui
+# hisi_dvr_gui
 
 
 [《基于海思H3520DV400和QT5.9设计的车载终端DVR控制平台》](https://blog.csdn.net/li_wen01/article/details/92413200)
